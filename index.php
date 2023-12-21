@@ -36,6 +36,9 @@ include 'dbconnect.php';
 		});
 	});
 </script>
+<style>
+
+</style>
 <!-- start-smoth-scrolling -->
 </head>
 	
@@ -157,18 +160,20 @@ include 'dbconnect.php';
 		
 <!-- //navigation -->
 	<!-- main-slider -->
+	<div class="p-5">
 		<ul id="demo1">
 			<li>
-				<img src="images/slide1.jpg" alt="" />
+				<img src="images/SLIDEE3.jpg" alt="" />
 			</li>
 			<li>
-				<img src="images/slide2.jpg" alt="" />
+				<img src="images/SLIDEE2.png" alt="" />
 			</li>
 			
 			<li>
-				<img src="images/slide3.jpg" alt="" />
+				<img src="images/SLIDEE3.jpg" alt="" />
 			</li>
 		</ul>
+	</div>
 	<!-- //main-slider -->
 	<!-- //top-header and slider -->
 	<!-- top-brands -->
@@ -262,8 +267,8 @@ include 'dbconnect.php';
 					<h3>Hubungi Kami</h3>
 					
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Richard's Lab, DKI Jakarta.</li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@email">info@email</a></li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Isna Nurul, Tasikmalaya.</li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:isnanurul2019@email">isnanurul2019@email</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+62 8113 2322</li>
 					</ul>
 				</div>
@@ -282,7 +287,7 @@ include 'dbconnect.php';
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2020 Richard's Lab. All rights reserved</p>
+				<p>© 2023 Tokopekita. All rights reserved</p>
 			</div>
 		</div>
 		

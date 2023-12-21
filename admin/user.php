@@ -5,10 +5,13 @@
 		
 	if(isset($_POST['adduser']))
 	{
-		$username = $_POST['uname'];
-		$password = password_hash($_POST['upass'], PASSWORD_DEFAULT); 
+		$namalengkap = $_POST['namalengkap'];
+		$notelp = $_POST['notelp'];
+		$alamat = $_POST['alamat'];
+		$email = $_POST['email'];
+		$password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 			  
-		$tambahuser = mysqli_query($conn,"insert into login values('','$username','$password')");
+		$tambahuser = mysqli_query($conn,"insert into login (userid,namalengkap,notelp,alamat,email,password,role) values('','$namalengkap','$notelp','$alamat','$email','$password','Admin')");
 		if ($tambahuser){
 		echo " <div class='alert alert-success'>
 			Berhasil menambahkan staff baru.
@@ -154,6 +157,7 @@
                             <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-center">
 									<h2>Daftar Staff</h2>
+									<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-info col-md-2">Tambah Staff</button>
 									</div>
                                     <div class="data-tables datatable-dark">
 										 <table id="dataTable3" class="display" style="width:100%"><thead class="thead-dark">
@@ -202,14 +206,14 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>By Richard's Lab</p>
+                <p>By Isna Nurul</p>
             </div>
         </footer>
         <!-- footer area end-->
     </div>
     <!-- page container area end -->
 	
-	<!-- modal input 
+	modal input 
 			<div id="myModal" class="modal fade">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -218,13 +222,25 @@
 						</div>
 						<div class="modal-body">
 							<form method="post">
+                                <div class="form-group">
+									<label>Nama</label>
+									<input name="namalengkap" type="text" class="form-control" placeholder="Nama" required autofocus>
+								</div>
+                                <div class="form-group">
+									<label>No Telpon</label>
+									<input name="notelp" type="text" class="form-control" placeholder="No Telpon" required autofocus>
+								</div>
+                                <div class="form-group">
+									<label>Alamat</label>
+									<input name="alamat" type="text" class="form-control" placeholder="Alamat" required autofocus>
+								</div>
 								<div class="form-group">
-									<label>Username</label>
-									<input name="uname" type="text" class="form-control" placeholder="Username" required autofocus>
+									<label>Email</label>
+									<input name="email" type="email" class="form-control" placeholder="Email" required autofocus>
 								</div>
 								<div class="form-group">
 									<label>Password</label>
-									<input name="upass" type="password" class="form-control" placeholder="Password">
+									<input name="password" type="password" class="form-control" placeholder="Password">
 								</div>
 
 							</div>
@@ -236,7 +252,7 @@
 					</div>
 				</div>
 			</div>
-	-->
+	
 	<script>
 	$(document).ready(function() {
     $('#dataTable3').DataTable( {

@@ -281,7 +281,8 @@ if(isset($_POST["update"])){
 						<?php 
 						$brg=mysqli_query($conn,"SELECT * from detailorder d, produk p where orderid='$orderidd' and d.idproduk=p.idproduk order by d.idproduk ASC");
 						$no=1;
-						$subtotal = 10000;
+						// $subtotal = 10000;
+						$subtotal = 0;
 						while($b=mysqli_fetch_array($brg)){
 						$hrg = $b['hargaafter'];
 						$qtyy = $b['qty'];
@@ -292,7 +293,8 @@ if(isset($_POST["update"])){
 						<?php
 						}
 						?>
-						<li>Total (inc. 10k Ongkir)<i> - </i> <span>Rp<?php echo number_format($subtotal) ?></span></li>
+						<!-- <li>Total (inc. 10k Ongkir)<i> - </i> <span>Rp<?php echo number_format($subtotal) ?></span></li> -->
+						<li>Total Harga<i> - </i> <span>Rp<?php echo number_format($subtotal) ?></span></li>
 					</ul>
 				</div>
 				<div class="checkout-right-basket">
@@ -332,7 +334,7 @@ if(isset($_POST["update"])){
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2020 Richard's Lab. All rights reserved</p>
+				<p>© 2023 Tokopekita. All rights reserved</p>
 			</div>
 		</div>
 		

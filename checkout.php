@@ -343,8 +343,8 @@ if(isset($_POST["checkout"])){
 					<h3>Hubungi Kami</h3>
 					
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Richard's Lab, DKI Jakarta.</li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@email">info@email</a></li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Isna Nurul, Tasikmalaya.</li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:isnanurul2019@email">isnanurul2019@email</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+62 8113 2322</li>
 					</ul>
 				</div>
@@ -363,7 +363,7 @@ if(isset($_POST["checkout"])){
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2020 Richard's Lab. All rights reserved</p>
+				<p>© 2023 Tokopekita. All rights reserved</p>
 			</div>
 		</div>
 		

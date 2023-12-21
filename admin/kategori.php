@@ -207,7 +207,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>By Richard's Lab</p>
+                <p>By Isna Nurul</p>
             </div>
         </footer>
         <!-- footer area end-->
